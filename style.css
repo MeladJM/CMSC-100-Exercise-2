@@ -1,0 +1,424 @@
+/*MELAD, JAN MCIHAEL C.*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif, 'Anta';
+}
+
+/* for setting my background*/
+body {
+    background-color: #D8EBFF; 
+}
+
+/* Banner Styling */
+#banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #074a7e),url(Images/background.png);
+    height: 70vh; 
+    background-size: cover; 
+    background-position: center; 
+    margin: 0 30px; 
+    display: flex; 
+    align-items: center; 
+}
+
+/*Set up my own picture in the banner area*/
+.bannerImage {
+    margin-bottom: -150px;
+    flex: 1; 
+    margin-right: -75px; 
+}
+
+/*Set up the size of my picture*/
+.bannerImage img {
+    max-width: 370px; 
+    height: auto; 
+}
+
+.bannerText {
+    flex: 2; 
+}
+
+/* Making the logo as a block element*/
+.logo {
+    width: 50%; 
+    display: block;  
+}
+
+/*Aligning the text to center and also setting the color */
+.bannerText{
+    text-align: center;
+    color: #fff;
+    padding-top: 220px;
+}   
+
+/* We utilize the font-family that we have imported for a more creative perspective */
+.bannerText h1{
+    font-family: "Anta", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 120px;
+    text-shadow: 5px 5px #00687d;
+}
+
+/* Format the text in the banner to be italic */
+.bannerText p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Determine the margin that the button has */
+.bannerButton {
+    margin: 5px auto 5px;
+}
+
+/* Styling the Buttons in the Banner */
+.bannerButton a{
+    color: #fff;
+    text-decoration: none;
+    display:inline-block;
+    margin: 40px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    position:relative; 
+    z-index: 1; 
+    transition: color 0.5s; 
+}
+
+.bannerButton a span{
+    width:5%; 
+    height: 100%; 
+    position:absolute; 
+    top:0; 
+    left:0; 
+    background-color: transparent;  
+    z-index: -1; 
+    transition: width 0.5s; 
+}
+
+.bannerButton a:hover span{
+    width: 100%; 
+    background-color: #D8EBFF; 
+}
+
+.bannerButton a:hover {
+    color: #0bb0d1; 
+}
+
+.container {
+    position: relative;
+}
+
+/* Side Navigation Styling */
+#sideNavigation {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000737; 
+    text-align: center; 
+    z-index: 1000; 
+}
+
+#sideNavigation nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#sideNavigation nav ul li {
+    margin-right: 20px; 
+}
+
+#sideNavigation nav ul li:last-child {
+    margin-right: 0; 
+}
+
+#sideNavigation nav ul li a {
+    display: block; 
+    color: rgb(235, 217, 254);
+    text-decoration: none; 
+    transition: all 0.3s ease; 
+}   
+
+#sideNavigation nav ul li a:hover {
+    background-color: #002955; 
+}
+
+.logo {
+    width: 100px; 
+    vertical-align: middle; 
+    margin-right:450px; 
+}
+
+.titleText {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.titleText p {
+    font-family: "Anta";
+    margin: auto;
+    font-size: 22px;
+    color: #00687d;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;  
+    display: inline-block; 
+}
+
+.titleText p::after {
+    content: '';
+    width: 70px;    
+    height: 35px;   
+    background: linear-gradient(#0888a1, #fff); 
+    position: absolute; 
+    top: -20px; 
+    left: 110px; 
+    transform: rotate(1deg);  
+    border-top-left-radius: 35px; 
+    border-bottom-right-radius: 35px;
+    z-index: -1
+}
+
+.titleText h1 {
+    font-size: 55px;
+    font-family: "Anta";
+}
+
+.titleText hr {
+    background-color: #000737;
+    height: 3px;
+    width: 52%;
+}
+
+#project{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #D8EBFF;
+}
+
+.descriptionProject{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-basis: 90%; 
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 15px; 
+    box-shadow: 0 20px 40px 6px #02345b; 
+    cursor: pointer;
+    transform: transform 1s;
+}
+
+.projectBox {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.singleProject {
+    flex: 1 1 calc(20% - 20px); 
+    position: relative;
+    border-left: 20px solid #D8EBFF; 
+    border-right: 20px solid #D8EBFF; 
+}
+
+.singleProject img{
+    width: 100%;
+    border-radius: 7px;
+    height: 85%;
+}
+
+.overlay{
+    height:85%;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5), #080d46);
+    opacity: 0;
+    transition: 1.4s;
+}
+
+.singleProject:hover .overlay{
+    opacity: 1;
+}
+
+.projectDescription{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity:0;
+    transform: translateX(-50%);
+    transition: 1.4s;
+    color: rgb(198, 221, 255);
+}
+
+hr{
+    background: rgb(198, 221, 255);
+    margin: 15px auto;
+    height: 3px;
+    border: 0;
+    width: 95%;
+}
+
+.projectDescription p{
+    font-size: 14px;
+    text-align: center;
+}
+
+.projectDescription h3{
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.singleProject:hover .projectDescription{
+    bottom: 25%;
+    opacity: 1;
+}
+
+#information {
+    width: 100%;
+    padding: 70px 0; 
+    background-color: #efefef;
+}
+
+.informationRow {
+    width: 80%;
+    margin: auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+}
+
+.informationColumn {
+    flex-basis: 45%; 
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 15px; 
+    box-shadow: 0 20px 40px 6px #02345b; 
+    cursor: pointer;
+    transform: transform 1s;
+}
+
+.additionalInfo {
+    padding: 20px;
+}
+
+.skills h3,
+.autobiography h3 {
+    font-family: "Anta";
+    font-size: 20px;
+    text-align: center; 
+}
+
+.skills ul {
+    list-style: none; 
+    padding: 0;
+}
+
+.skills ul li {
+    margin-bottom: 10px; 
+}
+
+.autobiography p {
+    font-size: 15px; 
+    text-align: justify; 
+}
+
+.informationRow .informationColumn:first-child {
+    margin-right: 20px; 
+}
+
+.informationRow .informationColumn:last-child {
+    margin-left: 20px; 
+}
+
+#footer {
+    padding: 70px 0 20px; 
+    background-color: #000737; 
+    position: relative;
+}
+
+.footerRow {
+    width: 80%; 
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+.footerLeft {
+    flex-basis: 30%; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+    text-align: left; 
+}
+
+.footerRight {
+    flex-basis: 65%; 
+    padding: 10px; 
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.titleText .developerTitle {
+    color: white;
+}
+
+.footerRow p {
+    line-height: 30px; 
+}   
+
+.footerLeft .fa,
+.footerRight .fa {
+    color: #0bb0d1; 
+    font-size: 20px; 
+    margin: 10px; 
+}
+
+.footerRow h1,
+.footerRow p {
+    color: rgb(235, 217, 254);
+}
+
+.fa-globe{
+    color: #0bb0d1; 
+    font-size: 20px; 
+    margin: 10px; 
+}
+
+.backToTop {
+    bottom: 20px; 
+    margin-left: 218px; 
+    background-color: #0bb0d1; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    transition: opacity 0.3s ease; 
+    z-index: 999; 
+}
+
+.backToTop:hover {
+    opacity: 0.7; 
+}
+
+.footerLogo{
+    width: 70%; 
